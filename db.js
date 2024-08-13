@@ -8,6 +8,7 @@ const db = mysql.createConnection({
   password: "Tamosa1985",
   port: "3306",
   database: "tamosa",
+  connectTimeout: 10000  // Timeout in milliseconds (10 seconds)
 });
 
 db.connect((err) => {
